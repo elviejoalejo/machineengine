@@ -1,4 +1,10 @@
 
+### Dev Environment 
+
+- Apache JMeter 5.6.3
+- JDK v21
+- Spring Boot v3.4.2
+
 ### Commands
 Commands below must be executed via CMD, these are not compatible with powershell.
 
