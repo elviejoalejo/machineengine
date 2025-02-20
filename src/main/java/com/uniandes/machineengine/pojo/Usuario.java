@@ -1,4 +1,4 @@
-package com.uniandes.motoremparejamiento.pojo;
+package com.uniandes.machineengine.pojo;
 
 import java.util.UUID;
 

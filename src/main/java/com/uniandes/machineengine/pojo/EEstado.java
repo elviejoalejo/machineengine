@@ -1,4 +1,4 @@
-package com.uniandes.motoremparejamiento.pojo;
+package com.uniandes.machineengine.pojo;
 
 public enum EEstado {
     Pendiente, Completada,EnUso;
