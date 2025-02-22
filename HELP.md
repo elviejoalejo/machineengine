@@ -10,8 +10,11 @@
 ### Commands
 Commands below must be executed via CMD, these are not compatible with powershell.
 
-Compile and run application
-* .\mvnw package && java -jar .\target\machineengine-0.0.1-SNAPSHOT.jar
+run application
+java -jar .\target\machineengine-0.0.1-SNAPSHOT.jar
+
+Compile 
+* .\mvnw package
 
 Build a container.
 * docker build -t elviejoalejo/machineengine-0.0.1 .
