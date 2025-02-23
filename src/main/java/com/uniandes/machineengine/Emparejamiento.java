@@ -46,6 +46,10 @@ public class Emparejamiento {
     return null;
   }
 
+  
+  public void cambiarEstadoOrden(OrdenVenta orden, EEstado estado) {
+  }
+
   public void actualizarOrdenesVentaPendiente() {
     System.out.println("actualizando ordendes de venta a pendiente");
     for (OrdenVenta ordenVenta : listaOrdenesVenta) {
