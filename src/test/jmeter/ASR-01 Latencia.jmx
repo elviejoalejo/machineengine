@@ -8,7 +8,7 @@
     </TestPlan>
     <hashTree>
       <OpenModelThreadGroup guiclass="OpenModelThreadGroupGui" testclass="OpenModelThreadGroup" testname="ASR-01 Latencia">
-        <stringProp name="OpenModelThreadGroup.schedule">rate(${__P(initialThreadPool, 1000)}/min) random_arrivals(1 min) rate(1000/min) </stringProp>
+        <stringProp name="OpenModelThreadGroup.schedule">rate(1000/min) random_arrivals(30 sec) rate(1000/min) </stringProp>
         <longProp name="OpenModelThreadGroup.random_seed">0</longProp>
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="OpenModelThreadGroupController"/>
@@ -19,6 +19,7 @@
           <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer">
             <stringProp name="ConstantTimer.delay">300</stringProp>
             <stringProp name="RandomTimer.range">100.0</stringProp>
+            <stringProp name="TestPlan.comments">0 &lt;=valorAleatorio&lt;=200 ms</stringProp>
           </GaussianRandomTimer>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Emparejamiento">
@@ -109,7 +110,7 @@
           <stringProp name="filename">C:\Uniandes\machineengine\src\test\jmeter\summary.csv</stringProp>
         </ResultCollector>
         <hashTree/>
-        <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Informe Agregado" enabled="true">
+        <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Informe Agregado">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -146,7 +147,7 @@
           <stringProp name="filename"></stringProp>
         </ResultCollector>
         <hashTree/>
-        <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table">
+        <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table" enabled="false">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
